@@ -5,7 +5,6 @@ export default class TodosList extends Component {
         return (
             <div>
                 <p>Welcome to Todos List Component!</p>
-                <p>will stage?</p>
             </div>
         )
     }
