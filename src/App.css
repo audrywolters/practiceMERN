@@ -1,0 +1,50 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@audrywolters
+1
+1812seeschweiler/mern-stack-part-01
+Code Issues 1 Pull requests 0 Projects 0 Wiki Security Insights
+mern-stack-part-01/src/App.css
+Sebastian Eschweiler Initial commit from Create React App
+1cd7816 on Dec 16, 2018
+33 lines (28 sloc)  468 Bytes
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
