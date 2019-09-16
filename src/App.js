@@ -28,7 +28,6 @@ class App extends Component {
                                     <Link to="/create" className="nav-link">Create Todo</Link>
                                 </li>
                             </ul>
-                            <p>will stage?</p>
                         </div>
                     </nav>
                     <br />
