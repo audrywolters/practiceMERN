@@ -38,11 +38,6 @@ export default class CreateTodo extends Component {
     onSubmit(e) {
         e.preventDefault();
 
-        console.log('Form submitted:');
-        console.log('description: ', ':', this.state.todo_description);
-        console.log('responsible: ', ':', this.state.todo_responsible);
-        console.log('priority: ',    ':', this.state.todo_priority);
-
         // eslint-disable-next-line react/no-direct-mutation-state
         this.state = {
             todo_description: '',
@@ -50,6 +45,11 @@ export default class CreateTodo extends Component {
             todo_priority: '',
             todo_completed: false
         }
+
+        console.log('Form submitted:');
+        console.log('description: ', ':', this.state.todo_description);
+        console.log('responsible: ', ':', this.state.todo_responsible);
+        console.log('priority: ',    ':', this.state.todo_priority);
     }
 
     render() {
