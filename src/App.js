@@ -15,6 +15,7 @@ class App extends Component {
             <Router>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        {/* eslint-disable-next-line */}
                         <a className="navbar-brand" href="https://codingthesmartway.com" target="_blank">
                             <img src={logo} width="30" height="30" alt="Coding smart way dot com" />
                         </a>
