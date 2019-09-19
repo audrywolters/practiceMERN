@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,7 +17,7 @@ class App extends Component {
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         {/* eslint-disable-next-line */}
                         <a className="navbar-brand" href="https://codingthesmartway.com" target="_blank">
-                            <img src={logo} width="30" height="30" alt="Coding smart way dot com" />
+                            <img src={logo} width="30" height="30" alt="Coding smart way dot com"/>
                         </a>
                         <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link>
                         <div className="collapse navbar-collapse">
@@ -31,10 +31,10 @@ class App extends Component {
                             </ul>
                         </div>
                     </nav>
-                    <br />
-                    <Route path="/" exact component={TodosList} />
-                    <Route path="/edit/:id" component={EditTodo} />
-                    <Route path="/create" component={CreateTodo} />
+                    <br/>
+                    <Route path="/" exact component={TodosList}/>
+                    <Route path="/edit/:id" component={EditTodo}/>
+                    <Route path="/create" component={CreateTodo}/>
                 </div>
             </Router>
         );

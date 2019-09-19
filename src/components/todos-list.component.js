@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import axios from 'axios';
 
 const Todo = props => (
@@ -8,7 +8,7 @@ const Todo = props => (
         <td className={props.todo.todo_completed ? 'completed' : ''}>{props.todo.todo_responsible}</td>
         <td className={props.todo.todo_completed ? 'completed' : ''}>{props.todo.todo_priority}</td>
         <td>
-            <Link to={ '/edit/' + props.todo._id }>Edit</Link>
+            <Link to={'/edit/' + props.todo._id}>Edit</Link>
         </td>
     </tr>
 );
@@ -16,19 +16,19 @@ const Todo = props => (
 export default class TodosList extends Component {
     constructor(props) {
         super(props);
-        this.state = { todos: [] };
+        this.state = {todos: []};
     }
 
     todoList() {
-        return this.state.todos.map(function(currentTodo, i) {
-            return <Todo todo={currentTodo} key={i} />;
+        return this.state.todos.map(function (currentTodo, i) {
+            return <Todo todo={currentTodo} key={i}/>;
         })
     }
 
     componentDidMount() {
         axios.get('http://localhost:4000/todos/')
             .then(response => {
-                this.setState({ todos: response.data });
+                this.setState({todos: response.data});
             })
             .catch(function (error) {
                 console.log(error);
@@ -39,17 +39,17 @@ export default class TodosList extends Component {
         return (
             <div>
                 <h3>Your Todos:</h3>
-                <table className="table table-striped" style={{ marginTop: 20 }}>
+                <table className="table table-striped" style={{marginTop: 20}}>
                     <thead>
-                        <tr>
-                            <th>Description</th>
-                            <th>Responsible</th>
-                            <th>Priority</th>
-                            <th>Action</th>
-                        </tr>
+                    <tr>
+                        <th>Description</th>
+                        <th>Responsible</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        { this.todoList() }
+                    {this.todoList()}
                     </tbody>
                 </table>
             </div>
